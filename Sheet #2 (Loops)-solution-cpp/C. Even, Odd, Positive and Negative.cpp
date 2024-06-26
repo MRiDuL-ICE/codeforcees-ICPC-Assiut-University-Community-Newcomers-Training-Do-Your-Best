@@ -7,8 +7,9 @@ int main()
 {
     int N,even=0,odd=0,pos=0,neg=0;
     cin>>N;
-    for(int X=1; X<=N; X++)
+    for(int i=1; i<=N; i++)
     {
+        int X;
         cin>>X;
         if(X%2==0)
         {
@@ -18,29 +19,20 @@ int main()
         {
             odd++;
         }
-        int pos(int p_count)
+        if(X>0)
         {
-            p_count=0;
-            if(X>0)
-            {
-                return p_count++;
-            }
-            cout<<"Positive: "<<pos(X)<<endl;
+            pos++;
         }
-        int neg(int n_count)
+        else if(X<0)
         {
-            n_count=0;
-            if(X<0)
-            {
-                return n_count++
-            }
-            cout<<"Negative: "<<neg(X)<<endl;
+            neg++;
         }
     }
 
     cout<<"Even: "<<even<<endl;
     cout<<"Odd: "<<odd<<endl;
+    cout<<"Positive: "<<pos<<endl;
+    cout<<"Negative: "<<neg<<endl;
 }
-
 
 
