@@ -28,11 +28,11 @@ int main()
     cin>>n;
     if(checkPrime(n))
     {
-        cout<<"Yes";
+        cout<<"YES";
     }
     else
     {
-        cout<<"No";
+        cout<<"NO";
     }
 }
 
