@@ -7,6 +7,7 @@ using namespace std;
 string isPalindrome(string N)
 {
     string P=N;
+    int i=0;
     reverse(P.begin(),P.end());
     if(N==P)
     {
